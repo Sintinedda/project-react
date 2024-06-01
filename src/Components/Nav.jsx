@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import "../nav.css";
+import "../css/nav.css";
 
 function Nav() {
 
@@ -19,7 +19,7 @@ function Nav() {
                 <li className="navbar-item"><Link to="/services" className="navbar-link">Services</Link></li>
                 <li className="navbar-item"><Link to="/realisations" className="navbar-link">Réalisations</Link></li>
                 <li className="navbar-item"><Link to="/blog" className="navbar-link">Blog</Link></li>
-                <li className="navbar-item"><Link to="/contact" className="navbar-link">Contact</Link></li>
+                <li className="navbar-item"><Link to="/contact" className="navbar-link"> Me contacter</Link></li>
             </ul>
             <button className="navbar-burger" onClick={handleShowLinks}>
                 <span className="burger-bar"></span>
