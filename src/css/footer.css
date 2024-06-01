@@ -1,0 +1,48 @@
+.footer {
+    background-color: #EEE;
+    padding: 2rem 0;
+}
+
+.footer-title,
+.footer-text {
+    padding: 0 1rem;
+}
+
+.footer-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+    padding-left: 1.5rem;
+}
+.footer-link::before {
+    content: "\002B9E";
+    color: #0d6efd;
+    padding-right: 0.5rem;
+}
+
+.footer-band {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #1e1e1e;
+    color: white;
+    width: 100vw;
+}
+
+.footer-band::before {
+    content: "\0000A9";
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: start;
+}
+
+.footer-logo {
+    height: 80px;
+}
