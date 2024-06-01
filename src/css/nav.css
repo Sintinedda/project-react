@@ -21,7 +21,6 @@
 
 .navbar-links {
     display: flex;
-    margin: 0 3rem 0 0;
 }
 
 .navbar-link {
@@ -49,10 +48,7 @@
         justify-content: start;
         position: absolute;
         top: 4rem;
-        bottom: 0;
-        width: 0;
         height: fit-content;
-        padding: 1rem;
         background-color: #1e1e1e ;
         display: none;
         transition: all .8s ease-out;
@@ -60,8 +56,6 @@
 
     .show-nav .navbar-links {
         width: 100%;
-        right: 0;
-        left: 0;
         display: block;
     }
 
@@ -73,9 +67,9 @@
 
     .navbar-burger {
         display: block;
-        position: sticky;
+        position: absolute;
         top: 1rem;
-        right: 1rem;
+        right: 3rem;
         border: 1px solid white;
         border-radius: 10%;
         width: 4rem;

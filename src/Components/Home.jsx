@@ -34,7 +34,7 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="home-apropos-container2 col-md-6">
-                        <img src={About} alt="" className="JohnDoeAbout" />
+                        <img src={About} alt="Personne au travail" className="JohnDoeAbout" />
                         <h4 className="home-apropos-h4">Mes compétences</h4>
                         <p className="home-apropos-comp">html5 90%</p>
                         <MDBProgress>
