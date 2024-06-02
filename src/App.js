@@ -6,6 +6,7 @@ import Nav from "./Components/Nav";
 import Footer from "./Components/Footer";
 import Home from "./Components/Home";
 import Service from "./Components/Service";
+import Realisation from "./Components/Realisation"
 
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Service />} />
+        <Route path="/realisations" element={<Realisation />} />
       </Routes>
       <Footer />
     </div>

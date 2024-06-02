@@ -1,0 +1,43 @@
+.generic-banner {
+    content: " ";
+    background-image: url(../img/banner-mobile.jpg);
+    height: 30vw;
+    background-size: cover;
+}
+
+.generic {
+    padding-bottom: 6rem;
+}
+
+.generic-h1,
+.generic-text {
+    text-align: center;
+}
+
+.generic-h1 {
+    text-transform: uppercase;
+}
+
+.generic-h1,
+.generic-text {
+    padding: 0 1rem;
+}
+
+.generic-h1 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+.generic-text {
+    font-size: 1.7rem;
+}
+
+.generic-bar {
+    content: " ";
+    background-color: #0d6efd;
+    height: 5px;
+    width: 20vw; 
+    margin: auto;   
+    margin-bottom: 5rem;
+}
