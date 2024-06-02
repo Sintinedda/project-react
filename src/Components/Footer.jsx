@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css"
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "../css/footer.css"
 import Github from "../img/logo-github.png";
 import X from "../img/logo-x.png";
@@ -22,23 +22,23 @@ function Footer() {
             </div>
             <div className="footer-row col-md-6 col-lg-3">
                 <p className="footer-title">Liens utiles</p>
-                <p className="footer-text"><Link to="/" className="footer-link">Accueil</Link></p>
-                <p className="footer-text"><Link to="#apropos" className="footer-link">À propos</Link></p>
-                <p className="footer-text"><Link to="/services" className="footer-link">Services</Link></p>
-                <p className="footer-text"><Link to="/contact" className="footer-link">Me contacter</Link></p>
-                <p className="footer-text"><Link to="/mentions" className="footer-link">Mentions légales</Link></p>
+                <p className="footer-text"><Link to="/" className="footer-link" reloadDocument>Accueil</Link></p>
+                <p className="footer-text"><Link to="/#apropos" className="footer-link">À propos</Link></p>
+                <p className="footer-text"><Link to="/services" className="footer-link"reloadDocument>Services</Link></p>
+                <p className="footer-text"><Link to="/contact" className="footer-link" reloadDocument>Me contacter</Link></p>
+                <p className="footer-text"><Link to="/mentions" className="footer-link" reloadDocument>Mentions légales</Link></p>
             </div>
             <div className="footer-row col-md-6 col-lg-3">
                 <p className="footer-title">Mes dernières réalisations</p>
-                <p className="footer-text"><Link to="/realisations" className="footer-link">Fresh Food</Link></p>
-                <p className="footer-text"><Link to="/realisation" className="footer-link">Restaurant Akira</Link></p>
-                <p className="footer-text"><Link to="/realisation" className="footer-link">Espace bien-être</Link></p>
+                <p className="footer-text"><Link to="/realisations#fresh-food" className="footer-link">Fresh Food</Link></p>
+                <p className="footer-text"><Link to="/realisations#akira" className="footer-link">Restaurant Akira</Link></p>
+                <p className="footer-text"><Link to="/realisations#espace-zen" className="footer-link">Espace bien-être</Link></p>
             </div>
             <div className="footer-row col-md-6 col-lg-3">
                 <p className="footer-title">Mes derniers articles</p>
-                <p className="footer-text"><Link to="/blog" className="footer-link">Coder son site en HTML/CSS</Link></p>
-                <p className="footer-text"><Link to="/blog" className="footer-link">Vendre ses produits sur le web</Link></p>
-                <p className="footer-text"><Link to="/blog" className="footer-link">Se positionner sur Google</Link></p>
+                <p className="footer-text"><Link to="/blog" className="footer-link" reloadDocument>Coder son site en HTML/CSS</Link></p>
+                <p className="footer-text"><Link to="/blog" className="footer-link" reloadDocument>Vendre ses produits sur le web</Link></p>
+                <p className="footer-text"><Link to="/blog" className="footer-link" reloadDocument>Se positionner sur Google</Link></p>
             </div>
             <div className="footer-band">Designed by John Doe</div>
         </div>
