@@ -3,11 +3,11 @@ import "bootstrap/dist/css/bootstrap.css";
 import Button from "react-bootstrap/Button"
 import Card from "react-bootstrap/Card"
 import "../css/generic.css";
-import "../css/realisation.css"
+import "../css/card.css"
 
-import FreshFood from "../img/fresh-food.jpg";
-import Akira from "../img/restaurant-japonais.jpg";
-import EspaceZen from "../img/espace-bien-etre.jpg";
+import FreshFood from "../img/realisation/fresh-food.jpg";
+import Akira from "../img/realisation/restaurant-japonais.jpg";
+import EspaceZen from "../img/realisation/espace-bien-etre.jpg";
 
 const Realisation = () => {
     return (
@@ -21,10 +21,10 @@ const Realisation = () => {
                 <Card style={{ width: '93%' }} className="card" id="fresh-food">
                     <Card.Img variant="top" src={FreshFood} className="card-img"/>
                     <Card.Body className="card-body">
-                        <Card.Title className="card-title">Fresh food</Card.Title>
-                        <Card.Text className="card-txt">Réalisation d'un site avec commande en ligne.</Card.Text>
-                        <Button variant="primary" className="card-button">Voir</Button>
-                        <Card.Footer className="card-footer">Site réalisé avec PHP et MySQL</Card.Footer>
+                        <Card.Title className="card-realisation-title">Fresh food</Card.Title>
+                        <Card.Text className="card-realisation-text">Réalisation d'un site avec commande en ligne.</Card.Text>
+                        <Button variant="primary" className="card-realisation-button">Voir</Button>
+                        <Card.Footer className="card-realisation-footer">Site réalisé avec PHP et MySQL</Card.Footer>
                     </Card.Body>
                 </Card>
                 </div>
@@ -32,10 +32,10 @@ const Realisation = () => {
                 <Card style={{ width: '93%' }} className="card" id="akira">
                     <Card.Img variant="top" src={Akira} className="card-img"/>
                     <Card.Body className="card-body">
-                        <Card.Title className="card-title">Restaurant Akira</Card.Title>
-                        <Card.Text className="card-text">Réalisation d'un site vitrine.</Card.Text>
-                        <Button variant="primary" className="card-button">Voir</Button>
-                        <Card.Footer className="card-footer">Site réalisé avec WordPress</Card.Footer>
+                        <Card.Title className="card-realisation-title">Restaurant Akira</Card.Title>
+                        <Card.Text className="card-realisation-text">Réalisation d'un site vitrine.</Card.Text>
+                        <Button variant="primary" className="card-realisation-button">Voir</Button>
+                        <Card.Footer className="card-realisation-footer">Site réalisé avec WordPress</Card.Footer>
                     </Card.Body>
                 </Card>
                 </div>
@@ -43,10 +43,10 @@ const Realisation = () => {
                 <Card style={{ width: '93%' }} className="card" id="espace-zen">
                     <Card.Img variant="top" src={EspaceZen} className="card-img"/>
                     <Card.Body className="card-body">
-                        <Card.Title className="card-title">Espace bien-être</Card.Title>
-                        <Card.Text className="card-text">Réalisation d'un site vitrine pour un practicien de bien-être.</Card.Text>
-                        <Button variant="primary" className="card-button">Voir</Button>
-                        <Card.Footer className="card-footer">Site réalisé en HTML/CSS</Card.Footer>
+                        <Card.Title className="card-realisation-title">Espace bien-être</Card.Title>
+                        <Card.Text className="card-realisation-text">Réalisation d'un site vitrine pour un practicien de bien-être.</Card.Text>
+                        <Button variant="primary" className="card-realisation-button">Voir</Button>
+                        <Card.Footer className="card-realisation-footer">Site réalisé en HTML/CSS</Card.Footer>
                     </Card.Body>
                 </Card>
                 </div>
