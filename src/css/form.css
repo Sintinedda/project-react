@@ -1,0 +1,65 @@
+
+
+.contact {
+    background-image: url(../img/contact-bg.jpg);
+    background-size: cover;
+}
+
+.contact-mask {
+    background-color: rgba(0, 105, 255, 0.5);
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+}
+
+.contact-mask-white {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    margin: 0 1.5rem;
+    border-radius: 1%;
+}
+
+.contact-container {
+    padding: 0 2.5rem;
+}
+
+.contact-h2 {
+    font-size: 2rem;
+}
+
+.contact-bar {
+    content: " ";
+    background-color: #0d6edf;
+    height: 3px;
+    margin-bottom: 2rem;
+}
+
+.contact-item,
+.contact-item-message {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+}
+
+.contact-item-message {
+    height: 10rem;
+}
+
+.contact-button {
+    display: block;
+    color: white;
+    background-color: #0d6edf;
+    margin: auto;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8%;
+    margin-bottom: 1rem;
+}
+.contact-telephone::before {
+    content: "	\01F4F1";
+}
+
+.contact-maps {
+    width: 100%;
+    height: 20rem;
+}
