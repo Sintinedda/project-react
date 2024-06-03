@@ -2,9 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css"
 import { HashLink as Link } from "react-router-hash-link";
 import "../css/footer.css"
-import Github from "../img/logo-github.png";
-import X from "../img/logo-x.png";
-import Linkedin from "../img/logo-linkedin.png";
+import Github from "../img/logo/github.png";
+import X from "../img/logo/x.png";
+import Linkedin from "../img/logo/linkedin.png";
 
 function Footer() {
     return (
@@ -36,9 +36,9 @@ function Footer() {
             </div>
             <div className="footer-row col-md-6 col-lg-3">
                 <p className="footer-title">Mes derniers articles</p>
-                <p className="footer-text"><Link to="/blog" className="footer-link" reloadDocument>Coder son site en HTML/CSS</Link></p>
-                <p className="footer-text"><Link to="/blog" className="footer-link" reloadDocument>Vendre ses produits sur le web</Link></p>
-                <p className="footer-text"><Link to="/blog" className="footer-link" reloadDocument>Se positionner sur Google</Link></p>
+                <p className="footer-text"><Link to="/blog#coder" className="footer-link">Coder son site en HTML/CSS</Link></p>
+                <p className="footer-text"><Link to="/blog#croissance" className="footer-link">Vendre ses produits sur le web</Link></p>
+                <p className="footer-text"><Link to="/blog#google" className="footer-link">Se positionner sur Google</Link></p>
             </div>
             <div className="footer-band">Designed by John Doe</div>
         </div>

@@ -2,9 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../css/generic.css";
 import "../css/service.css";
-import Computer from "../img/logo-computer.jpg";
-import File from "../img/logo-file.png";
-import Search from "../img/logo-search.png";
+import Computer from "../img/logo/computer.jpg";
+import File from "../img/logo/file.png";
+import Search from "../img/logo/search.png";
 
 const Service = () => {
     return (
