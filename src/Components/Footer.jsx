@@ -26,7 +26,7 @@ function Footer() {
                 <p className="footer-text"><Link to="/#apropos" className="footer-link">À propos</Link></p>
                 <p className="footer-text"><Link to="/services" className="footer-link"reloadDocument>Services</Link></p>
                 <p className="footer-text"><Link to="/contact" className="footer-link" reloadDocument>Me contacter</Link></p>
-                <p className="footer-text"><Link to="/mentions" className="footer-link" reloadDocument>Mentions légales</Link></p>
+                <p className="footer-text"><Link to="/notice" className="footer-link" reloadDocument>Mentions légales</Link></p>
             </div>
             <div className="footer-row col-md-6 col-lg-3">
                 <p className="footer-title">Mes dernières réalisations</p>

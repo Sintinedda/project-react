@@ -8,7 +8,8 @@ import Home from "./Components/Home";
 import Service from "./Components/Service";
 import Realisation from "./Components/Realisation";
 import Blog from "./Components/Blog";
-import Contact from "./Components/Contact"
+import Contact from "./Components/Contact";
+import Notice from "./Components/Notice"
 
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/realisations" element={<Realisation />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/notice" element={<Notice />} />
       </Routes>
       <Footer />
     </div>

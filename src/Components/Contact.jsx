@@ -1,11 +1,11 @@
 import React from "react";
-import { useState } from "react";
+import { useRef } from "react";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
+import emailjs from "@emailjs/browser"
 import "../css/generic.css"
-import "../css/form.css"
+import "../css/contact.css"
 
 const libraries = ["places"];
-
 const mapContainerStyle = {
     width: "100%",
     height: "100%",
@@ -17,19 +17,28 @@ const center = {
 };
 
 export default function Contact() {
-    const [inputs, setInputs] = useState({name:"", email:"", phone:"", subject:"", message:""});
+    const form =useRef();
 
-    const handleChange = (event) => {
-        const { name, value} = event.target;
-        setInputs ((prevInputs) => ({...prevInputs, [name]: value}));
-    };
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    const handleSubmit = (event) => {
-        event.preventDefault();
+        emailjs
+            .sendForm( process.env.REACT_APP_MAIL_SERVICE, process.env.REACT_APP_MAIL_TEMPLATE, form.current, {
+                publicKey: process.env.REACT_APP_MAIL_KEY 
+            })
+            .then(
+                () => {
+                    alert("Email envoyé avec succés");
+                },
+                () => {
+                    alert("Quelque chose ne s'est pas passé comme prévu")
+                },
+            ); 
+            e.target.reset()       
     };
 
     const { isLoaded, loadError } = useLoadScript({
-        googleMapsApiKey: "AIzaSyDEnRQRCuvqApZAYMaFZT_cI9nq0do1RtQ",
+        googleMapsApiKey: process.env.REACT_APP_API_KEY,
         libraries,
     });
 
@@ -52,19 +61,19 @@ export default function Contact() {
                         <div className="col-md-6">
                             <h2 className="contact-h2">Formulaire de contact</h2>
                             <div className="contact-bar"></div>
-                            <form onSubmit={handleSubmit}>
-                                    <input className="contact-item" type="text" id="name" name="name" value={inputs.name} onChange={handleChange} placeholder="Votre nom" required/>
-                                    <input className="contact-item" type="text" id="email" name="email" value={inputs.email} onChange={handleChange} placeholder="Votre adresse email" required/>
-                                    <input className="contact-item" type="number" id="phone" name="phone" value={inputs.phone} onChange={handleChange} placeholder="Votre numéro de téléphone" required/>
-                                    <input className="contact-item" type="text" id="subject" name="subject" value={inputs.subject} onChange={handleChange} placeholder="Sujet" required/>
-                                    <textarea className="contact-item-message" type="text" id="message" name="message" value={inputs.message} onChange={handleChange} placeholder="Votre message" required/>
+                            <form ref={form} onSubmit={sendEmail}>
+                                    <input className="contact-item" type="text"  name="name" placeholder="Votre nom" required/>
+                                    <input className="contact-item" type="text"  name="email" placeholder="Votre adresse email" required/>
+                                    <input className="contact-item" type="number"  name="phone" placeholder="Votre numéro de téléphone" required/>
+                                    <input className="contact-item" type="text"  name="subject" placeholder="Sujet" required/>
+                                    <textarea className="contact-item-message" type="text"  name="message" placeholder="Votre message" required/>
                                     <button className="contact-button" type="submit">Envoyer</button>
                             </form>
                         </div>
                         <div className="col-md-6">
                             <h2 className="contact-h2">Mes coordonées</h2>
                             <div className="contact-bar"></div>
-                            <address><i class="material-icons">&#xe55f;</i>40 Rue Laure Diebold, 69009 Lyon, France</address>
+                            <address><i className="material-icons">&#xe55f;</i>40 Rue Laure Diebold, 69009 Lyon, France</address>
                             <p className="contact-telephone">06 20 30 40 50</p>
                             <div className="contact-maps">
                                 <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={18} >

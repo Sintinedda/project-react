@@ -56,7 +56,7 @@
     margin-bottom: 1rem;
 }
 .contact-telephone::before {
-    content: "	\01F4F1";
+    content: "\01F4F1";
 }
 
 .contact-maps {

@@ -24,7 +24,7 @@ const Service = () => {
                     <h2 className="service-h2">développement web</h2>
                     <p className="service-text">Le <strong>développement de sites web</strong> repose sur l'utilisation des langages <span className="service-underline">html</span>, <span className="service-underline">css</span>, Javascript et <span className="service-underline">php</span>.</p>
                 </div>
-                <div className="service-div col-md-3">
+                <div className="service col-md-3">
                     <img src={Search} alt="Logo de loupe" className="service-logo" />
                     <h2 className="service-h2">référencement</h2>
                     <p className="service-text">Le <strong>référencement naturel d'un site</strong>, aussi appelé <span className="service-underline">seo</span>, consiste à mettre des techniques en oeuvre pour <span className="service-italic">améliorer sa position</span> dans les résultats des moteurs de recherche.</p>
