@@ -1,0 +1,23 @@
+.accordion {
+    margin: 2rem;
+}
+
+.accordion-item0-phone,
+.accordion-item0-mail,
+.accordion-item1-web,
+.accordion-item2-web {
+    text-decoration: none;
+}
+
+.accordion-item0-phone::before {
+    content: "\01F4F1";
+}
+
+.accordion-item0-mail::before {
+    content: "\1F582";
+    font-weight: 600;
+}
+
+.accordion-item1-web::before {
+    content: "\1F310";
+}
