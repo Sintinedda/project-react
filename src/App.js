@@ -1,5 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+
+
 
 import "./css/App.css";
 import Nav from "./Components/Nav";
@@ -13,6 +17,7 @@ import Notice from "./Components/Notice"
 
 
 export default function App() {
+  library.add(fas)
   return(
     <div className="App">
       <Nav />

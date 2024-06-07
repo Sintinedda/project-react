@@ -7,17 +7,15 @@
 .accordion-item1-web,
 .accordion-item2-web {
     text-decoration: none;
+    color: #0d6efd;
 }
 
-.accordion-item0-phone::before {
-    content: "\01F4F1";
+.accordion-header {
+    --bs-accordion-btn-color: #0d6efd;
+    --bs-accordion-active-color: #0d6efd;
 }
 
-.accordion-item0-mail::before {
-    content: "\1F582";
-    font-weight: 600;
-}
-
-.accordion-item1-web::before {
-    content: "\1F310";
+.accordion-icon {
+    padding-right: 5px;
+    color: black;
 }

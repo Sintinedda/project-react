@@ -47,3 +47,25 @@
 .footer-logo {
     height: 80px;
 }
+
+.footer-return {
+    text-align: center;
+}
+
+.scroll-to-top {
+    background-color: #298eff;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-to-top:hover {
+    font-weight: 600;
+}
+
+.scroll-to-top.visible {
+    display: inline-block;
+}

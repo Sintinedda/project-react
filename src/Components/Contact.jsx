@@ -1,9 +1,10 @@
 import React from "react";
 import { useRef } from "react";
 import { GoogleMap, useLoadScript, MarkerF } from "@react-google-maps/api";
-import emailjs from "@emailjs/browser"
-import "../css/generic.css"
-import "../css/contact.css"
+import emailjs from "@emailjs/browser";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import "../css/generic.css";
+import "../css/contact.css";
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -73,8 +74,14 @@ export default function Contact() {
                         <div className="col-md-6">
                             <h2 className="contact-h2">Mes coordonées</h2>
                             <div className="contact-bar"></div>
-                            <address><i className="material-icons">&#xe55f;</i>40 Rue Laure Diebold, 69009 Lyon, France</address>
-                            <p className="contact-telephone">06 20 30 40 50</p>
+                            <address>
+                                <FontAwesomeIcon icon="fa-solid fa-location-dot" className="contact-icon"/>
+                                40 Rue Laure Diebold, 69009 Lyon, France
+                            </address>
+                            <p className="contact-telephone">
+                                <FontAwesomeIcon icon="fa-solid fa-mobile-screen" className="contact-icon"/>
+                                06 20 30 40 50
+                            </p>
                             <div className="contact-maps">
                                 <GoogleMap mapContainerStyle={mapContainerStyle} center={center} zoom={18} >
                                     <MarkerF position={center} />

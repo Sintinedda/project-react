@@ -5,11 +5,14 @@
     border-radius: 5%;
 }
 
-.service-logo {
+.service-icon {
     height: 50px;
     color: #0d6efd;
     display: block;
     margin: auto;
+}
+.service:hover .service-icon {
+    color: #cde1f8;
 }
 
 .service-h2,
