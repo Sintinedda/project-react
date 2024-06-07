@@ -24,9 +24,13 @@
 }
 
 .navbar-link {
-    color: white;
+    color: grey;
     padding: 0 1rem;
     text-decoration: none;
+}
+
+.navbar-link:hover {
+    color: rgba(255, 255, 255, 0.8) ;
 }
 
 .navbar-burger {

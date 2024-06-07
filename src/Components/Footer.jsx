@@ -1,12 +1,25 @@
 import React from "react";
+import ReactDom from "react-dom";
 import "bootstrap/dist/css/bootstrap.css"
 import { HashLink as Link } from "react-router-hash-link";
 import "../css/footer.css"
-import Github from "../img/logo/github.png";
-import X from "../img/logo/x.png";
-import Linkedin from "../img/logo/linkedin.png";
+
+
 
 function Footer() {
+
+    const showButton = () => document.querySelector(".scroll-to-top").classList.add("visible");
+    const hideButton = () => document.querySelector(".scroll-to-top").classList.remove("visible");
+    document.addEventListener("scroll", () => window.scrollY < 100 ? hideButton() : showButton());
+
+    const scrollToTop = () => {
+        window.addEventListener(
+            "load",
+          window.scrollTo(0, 0)
+        )    
+    }
+    
+
     return (
         <div className="footer row justify-content-center">
             <div className="footer-row col-md-6 col-lg-3">
@@ -15,9 +28,7 @@ function Footer() {
                 <p className="footer-text">69009 Lyon, France</p>
                 <p className="footer-text">Télephone : 06 20 30 40 50</p>
                 <div className="footer-logos">
-                    <img src={Github} alt="Logo Github" className="footer-logo"/>
-                    <img src={X} alt="Logo X" className="footer-logo"/>
-                    <img src={Linkedin} alt="Logo Linkedin" className="footer-logo"/>
+                    
                 </div>
             </div>
             <div className="footer-row col-md-6 col-lg-3">
@@ -41,6 +52,7 @@ function Footer() {
                 <p className="footer-text"><Link to="/blog#google" className="footer-link">Se positionner sur Google</Link></p>
             </div>
             <div className="footer-band">Designed by John Doe</div>
+            <div className="footer-return"><p className="scroll-to-top" onClick={scrollToTop}>Retourner en haut de la page</p></div>
         </div>
     );
 };
