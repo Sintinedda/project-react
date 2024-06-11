@@ -1,3 +1,6 @@
+# Hosting in CodeSandBox
+https://codesandbox.io/p/github/Sintinedda/project-react/main?import=true
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
