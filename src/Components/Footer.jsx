@@ -1,5 +1,4 @@
 import React from "react";
-import ReactDom from "react-dom";
 import "bootstrap/dist/css/bootstrap.css"
 import { HashLink as Link } from "react-router-hash-link";
 import "../css/footer.css"

@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import "../css/home.css"
 import { MDBProgress, MDBProgressBar } from 'mdb-react-ui-kit';
 import About from "../img/john-doe-about.jpg";
+import GitHub from "./Github";
 
 const Home = () => {
     return(
@@ -56,6 +57,9 @@ const Home = () => {
                         <MDBProgress>
                             <MDBProgressBar width="50" valuemin={0} valuemax={100}/>
                         </MDBProgress>
+                    </div>
+                    <div className="home-apropos-container3">
+                        <GitHub />
                     </div> 
                 </div>
         </main>
